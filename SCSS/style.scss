@@ -1,0 +1,21 @@
+@import "./variable";
+@import "./testimonial-01";
+@import "./portfolio-02";
+@import "./socialmedia-03";
+
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+@media (max-width: 960px) {
+  .portfolio-item {
+    width: 48%;
+    margin: 15px 1%;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-item {
+    width: 100%;
+    margin: 15px 0;
+  }
+}

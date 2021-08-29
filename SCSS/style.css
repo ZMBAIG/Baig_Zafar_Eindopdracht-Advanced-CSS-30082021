@@ -1,0 +1,273 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/*=============Deel 1 - Testimonial maken==========================================*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c3cfe2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+.testimonial-container {
+  display: flex;
+  max-width: 1500px;
+}
+
+.testimonial {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  overflow: hidden;
+  max-width: 100%;
+  width: 400px;
+}
+
+.testimonial-body {
+  padding: 40px 40px 80px;
+}
+
+.testimonial-body p {
+  font-size: 20px;
+  line-height: 36px;
+  margin: 0;
+}
+
+.testimonial-footer {
+  background-color: #686de0;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.testimonial-footer img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  height: 120px;
+  width: 120px;
+  margin-top: -100px;
+}
+
+.testimonial-footer h3 {
+  margin: 10px 0;
+  letter-spacing: 2px;
+}
+
+.testimonial-footer h4 {
+  color: #a5a7e9;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/*=============Deel 2 - Portfolio Grid================================================*/
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 50px;
+  text-align: center;
+}
+
+p {
+  line-height: 24px;
+  margin: 0;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1120px;
+  margin: 20px;
+}
+
+.portfolio-item {
+  border-radius: 10px;
+  margin: 20px 1.6%;
+  overflow: hidden;
+  position: relative;
+  width: 30%;
+}
+
+.portfolio-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 200ms ease-in;
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-content {
+  background-color: #25324b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-item:hover .portfolio-content {
+  opacity: 1;
+}
+
+.portfolio-content p {
+  color: #fff;
+  font-size: 20px;
+  padding: 0 40px;
+}
+
+.portfolio-content a {
+  background-color: #fff;
+  border-radius: 3px;
+  color: #000;
+  margin-top: 20px;
+  padding: 7px 15px;
+  text-decoration: none;
+}
+
+@media (max-width: 960px) {
+  .portfolio-item {
+    width: 48%;
+    margin: 15px 1%;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio-item {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+/*===============Deel 3 - Social Media Buttons=======================================*/
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+.social-media-container {
+  position: fixed;
+  top: 50%;
+  left: calc(100% - 60px);
+  list-style-type: none;
+  padding: 0;
+  transform: translateY(-50%);
+  min-width: 250px;
+}
+
+.social-media {
+  align-items: center;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-media:hover {
+  transform: translateX(calc(-100% + 60px));
+}
+
+.social-media.blog {
+  background-color: #e17b77;
+}
+
+.social-media.facebook {
+  background-color: #3b5998;
+}
+
+.social-media.twitter {
+  background-color: #00aced;
+}
+
+.social-media.github {
+  background-color: #333;
+}
+
+.social-media.linkedin {
+  background-color: #007bb6;
+}
+
+.social-media i {
+  color: #fff;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  width: 60px;
+}
+
+.social-media a {
+  color: #fff;
+  padding: 0 10px;
+}
+
+.fa-laptop-code:before {
+  content: "";
+}
+
+.fa-twitter:before {
+  content: "";
+}
+
+.fa-linkedin-in:before {
+  content: "";
+}
+
+.fa-facebook-f:before {
+  content: "";
+}
+
+.fa-github:before {
+  content: "";
+}
+
+.fab {
+  font-family: "Font Awesome 5 Brands";
+}
+
+.fa,
+.fab,
+.fal,
+.far,
+.fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.social-media i {
+  color: #fff;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  width: 60px;
+}/*# sourceMappingURL=style.css.map */
